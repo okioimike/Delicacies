@@ -1,3 +1,9 @@
-<h2>Mokami's Delicacies</h2>
+{% extends 'pizza/base.htmls' %}
+{% block 'body' %}
 
-<a href="{% url 'order' %}">Make an order</a>
+<div class="text-center">
+    {% load static %}
+    <img src="{% static 'delicacies.jpg' %}" class="img-fluid" alt="Mokami's Delicacies">
+</div>
+
+{% endblock %}
